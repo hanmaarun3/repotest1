@@ -1,0 +1,39 @@
+Selenium Intro
+
+browser launch 
+
+webdriver and web element method  eg : FB
+
+locators id , name, relative x path  eg : FB
+
+Drop down    :  Link : https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html
+
+scroll up and scroll down  : Amazon
+
+takes screenshot    
+ 
+alert      link : http://demo.automationtesting.in/Alerts.html
+
+frames     link : http://demo.automationtesting.in/Frames.html
+
+Actions and robot class   Eg : Amazon
+
+wait
+
+Windows handling x Eg : Amazon 
+
+absolute x path
+
+dynamic x path
+
+/// Base class
+
+
+
+And Web Table : https://www.seleniumeasy.com/test/table-data-download-demo.html
+
+
+
+
+
+

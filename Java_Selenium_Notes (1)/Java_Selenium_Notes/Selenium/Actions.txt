@@ -1,0 +1,65 @@
+Actions : 
+
+	It is a class
+
+	It Performs the mouse and keyboard actions.
+
+Syntax : 
+
+	Actions objName = new Actions(driver);
+
+Action - Interface
+
+Mouse based actions : 
+
+		click[WebElement]
+
+		contextClick [WebElement]
+
+		doubleClick [WebElement]
+
+		moveToElement[WebElement]
+
+		dragAndDrop[WebElement Source , WebElement Target]
+
+
+For mouse based actions methods :
+
+			  	We must give build() and perform(). 
+
+
+				build() ---> all the actions gathered which are ready to be performed.
+
+				perform() ----> perform a sequence of actions.
+
+
+***********************************************************************************************************************
+Keyboard based action : 
+
+Robot class :
+
+
+      		           KeyPress 
+
+	         	            KeyRelease
+
+
+Key Event  is a class and it performs the keyboard function.
+
+VK : Virtual Key
+
+Syntax  : 
+
+	Robot r = new Robot();
+
+	r.keyPress(KeyEvent.anyfunction)
+
+	r.keyRelease(KeyEvent.anyFunction)			
+
+
+***********************************************************************************************************************
+
+			
+
+
+

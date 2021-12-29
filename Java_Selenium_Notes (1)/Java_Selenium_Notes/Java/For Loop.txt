@@ -1,0 +1,89 @@
+Control Statement :
+
+
+For Loop
+
+
+While Loop
+
+Do-While Loop
+
+
+
+For Loop :
+
+Syntax :
+
+for ( initialize ; condition ; inc /dec ){
+
+
+}
+
+
+o/p :
+
+1
+2
+3
+
+i = 1; 
+
+i<= 3 ; ----> 1<=3; // true
+syso(i) ---> *1*
+
+i++ -----> 1+1 = 2
+i=2;
+
+2<=3; // true
+syso(i) 
+
+5
+4
+3
+
+1 2 3
+
+* * *
+
+
+1.
+
+*
+*
+*
+
+2.
+
+1
+1
+1
+
+
+3.
+1 1 1
+
+
+4.
+
+5 5 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

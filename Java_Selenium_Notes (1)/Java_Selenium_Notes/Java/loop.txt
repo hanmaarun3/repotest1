@@ -1,0 +1,49 @@
+while 
+do - while
+
+
+First it will check the condition 
+if it is true it go to the loop
+if its fails it will exit from the loop
+
+do - while
+
+First it will allow to the loop.
+at the end it will check the condition.
+
+
+Selection Statement :
+
+If 
+switch
+
+
+if 
+	elseif 
+		else
+
+
+Logical And = && ----> Both conditions are satisfied
+Logical Or  = || ------> either one of the conditions will be satisifed.
+
+
+
+Jumping Statement :
+
+break
+
+continue
+
+break : it will exit from the current loop.
+
+continue : it will skip the particular iteration.
+
+
+
+
+
+
+
+
+
+

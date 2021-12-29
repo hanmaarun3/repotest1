@@ -1,0 +1,9 @@
+Dynamic X - Path : 
+
+
+<div class = "product-prize"> 
+ <span> 
+       <span class = "product-discountedPrice">
+          <! React Text : 394 --->
+          Rs
+       <span class = "product-strike">

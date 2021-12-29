@@ -1,0 +1,97 @@
+API : Application Programming Interface
+
+Adactin, Automation Practice 
+
+
+Frontend
+
+
+Backend
+
+
+
+Redmi (server)                          Amazon (GUI) client                   Flipkart (client)
+
+Redmi 9 Pro ( No Stock )		 Redmi 9 Pro ( Book )                 Redmi 9 Pro Max
+
+Redmi 9 Pro Max
+
+
+
+DataBase		    API  ------- Database                               Database
+
+	      HTTP  
+
+Client ----> Request ------> Server 
+
+				|
+
+			      
+Client <-----<Response------- < Server
+
+URL : Uniform Resource Locator
+
+Path parameter /
+
+Querry Parameter ?key=value
+
+
+1xx  -----> Informational          
+
+2xx  -----> Success
+
+3xx  -----> Re-directional
+
+4xx  -----> Client Side Error
+
+5xx  -----> Server Side Error
+
+
+
+
+
+
+
+XML / JSON  : 
+
+
+HTTP Methods / CRUD Operators : 
+
+Create             POST
+
+Retrieve           GET
+
+Update             PUT
+
+Delete             DELETE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+API : 
+
+Postman
+
+Rest-Assured
+

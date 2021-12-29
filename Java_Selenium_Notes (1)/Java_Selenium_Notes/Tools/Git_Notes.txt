@@ -1,0 +1,168 @@
+Java 
+Selenium
+Maven
+TestNG/ Cucumber BDD
+manual Testing
+-------------------------
+GIT
+Jenkins - >  automation of automation ---> CICD Tool
+JIRA -> Defect Tracking Tool
+
+
+API Testing 
+SQL 
+
+
+
+GIT :
+
+Version Control Distributed System
+
+SCM -> Source Code Management tool
+
+push   : 
+
+Local repository to Remote Repository  : .git to GITHUB Repository
+
+pull : 
+
+Remote Repository to local repository : GITHUB To .git
+
+IDE - > 
+Termial
+
+Step 1 : For Configuration
+
+	git config --global user.email "emailid"
+
+	git config --global user.name "name"
+
+Step 2 : Initilize the local repository ( repo ) 
+
+	git init 
+
+
+Step 3 : Add all the files into local repo
+
+	git add .
+
+	. ----> all files
+
+Step 4 : For Declaration
+
+	git commit -m "msg"
+
+Step 5 : Connect to remote repo
+
+	git remote add origin repository url
+
+Step 6 : Mode 
+
+	git push -u origin master
+
+
+
+
+
+
+pull : ( override )
+
+git pull origin master
+
+clone : ( copy into different location) 
+
+git clone url
+
+present working directory : pwd 
+
+change directory : cd "path"
+
+git status
+
+git log
+
+git checkout -branch "branchname"  ---->  create new branch
+
+
+
+
+----------------------------------------------
+
+
+Workspace
+
+
+init
+
+.git (  ) -----
+
+add .
+
+git commit
+
+remote addd origin
+
+push
+
+
+Remote 
+
+
+
+
+--------------------------------
+
+10 / 11 ----> POM Class  ---->Workspace,  Local , Remote 
+
+14 / 11 ----> Framework  ----> Workspace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+merge
+
+
+Alternate Tool : BitBucket
+
+
+Conflict : 
+
+Push Conflict 
+
+Merge Conflict
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

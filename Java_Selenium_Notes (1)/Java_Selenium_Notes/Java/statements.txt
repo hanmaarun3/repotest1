@@ -1,0 +1,24 @@
+Selection statement : 
+
+if
+else-if
+else
+
+
+Logical operators : 
+
+Logical AND : 
+		&& --->  Both conditions must be satisfied
+
+Logical OR  : || ---> either one of conditions will be satisfied.
+
+switch
+
+
+jumping statement : 
+
+
+break : it will exit from the loop
+
+
+continue : it will skip the particular iteration.

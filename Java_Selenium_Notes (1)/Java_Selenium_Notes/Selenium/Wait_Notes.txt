@@ -1,0 +1,64 @@
+Thread.sleep(500000); // static wait
+
+Wait or Synchronization // dynamic wait
+------------------
+Implicit wait :
+
+		It will tell to the webdriver to wait for a certain time 
+		before throwing no such element exception.
+
+Syntax :  
+
+	driver.manage().timeouts.implicitlywait(30, TimeUnit.SECONDS);
+
+***********************************************************************************************
+Explicit wait :
+
+		It will tell to the webdriver to wait for a certain conditions (or) maximum time before 
+		throwing Element not visible exception,
+
+Syntax :  
+
+	WebDriverWait wait = new WebDriverWait (driver,30);
+
+	wait.until(ExpectedConditions.visibilityOf(element));
+
+***********************************************************************************************
+Fluent wait : 
+
+		it will tell to the webdriver to wait for a condition as well as frequency.
+
+		Frequency -> Regular interval of time.
+
+Syntax : 
+
+	Wait wait1 = new FluentWait(driver)
+
+					    .withtimeout(30, Timeunit.SECONDS)
+
+					    .pollingEvery(10, Timeunit.SECONDS)
+
+					    .ignoring(Exception.class);
+
+************************************************************************************************************************************
+Differences : 
+
+Implicit wait   				              Explicit wait 
+
+
+Applicable for all Elements                             Applicable for only specified element
+
+
+no specific conditions                                        Separated Condition
+
+
+				 Wait for elements taking too long time to be appear.
+
+
+
+********************************************************************************************************************************************************************
+
+
+
+
+

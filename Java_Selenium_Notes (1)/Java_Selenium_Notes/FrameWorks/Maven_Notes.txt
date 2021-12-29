@@ -1,0 +1,158 @@
+Maven :  Build management tool
+
+can maintain proper structure
+
+can manage dependencies 
+
+can build code for us
+
+how to check mvn is installed or not : mvn -version
+
+Base Class
+
+PageObjectModel
+
+PageObjectManager / Singleton Design pattern
+
+Property File
+
+
+src/test/java
+
+Runner class
+
+
+Local Repository			pom.xml				Maven Repository/ Remote repository
+
+
+					 add				dependencies
+
+
+***********************************************************************************************
+Terminologies :
+
+GroupID : Company_Name ----> com.google.gmail
+
+Artificat ID : Project name ---> Gmail 
+
+version : Version number 
+
+ArcheType : imbuild template ---> Quickstart 1.1
+
+dependencies : External Jar and Libraries
+
+	     < dependencies> 
+
+			<dependency>
+
+			</dependency>	
+
+	     </dependencies>
+
+plugins : complier plugin --> Some features not perform by jar so we add plugin
+
+<build> 
+
+	<plugins> 
+	  
+          <plugin> 
+
+          	<configuration> 
+
+		    <source>  </source> 
+		    <target>  </target>
+
+	</configuration> 
+           </plugin> 
+
+	 </plugins>
+
+</build> 
+
+Maven central/ remote repository : mvn repository.com
+
+Maven Local Repository : .m2 folder
+
+Flow : 
+
+Local Repository ------->  Pom.xml  ----------> Remote Repository
+	   (.m2) folder					
+
+**********************************************************************************************
+Maven Project : 
+
+File ----> new ---> Project ---> maven project---->  
+
+Maven Project Structure : 
+
+src/main/java : Actual Code ---> base class ,  pom 
+
+src/test/java : Unit Testing 
+
+pom.xml  : project object model 
+
+	   Add Dependencies 
+
+xml -> extensible markup language
+
+
+**********************************************************************************************
+
+Maven Phases : 
+
+LifeCycle
+
+Phases
+
+Goals
+
+Plugin
+
+
+
+
+**********************************************************************************************
+
+					Lifecycle 
+ 
+Build                                     	Clean                               		Site
+
+
+For project deployment               for clean and remove the files       create a site documentation
+
+
+***************************************************************************************************************
+Phases : Lifecycle comprises of several phases
+
+Build: 
+
+	validate -> check if all info necessary for the build is available
+
+	compile ->  compile the source code
+
+	test-compile –>  compile the test source code
+
+	test  ->  run unit tests
+
+	package -> package compiled source code into their distributable format (jar/war)
+
+	integration-test-> process and deploy the package if needed to run integration tests
+	
+	install ->  install the package to the remote repository
+
+	deploy ->  copy the package to remote repository
+
+
+Goals : 
+
+	Each phase is a sequence of goals, and each goal is responsible for a specific task
+
+        When we run a phase – all goals bound to this phase are executed in order.
+
+
+		Eg : Compiler-Plugin , SurefilePlugin	
+
+		    
+**********************************************************************************************
+
+

@@ -1,0 +1,64 @@
+Java ---> Programming language
+
+Selenium ---> Automation Tool
+
+( depends upon any programming language )
+
+Support : POM  ---> page object model
+
+	  Maven --> Build Automation Tool
+
+Frameworks :
+
+Data-Driven
+
+Test NG ---> TDD ( Test Driven Development )
+
+Cucumber ---> BDD  ( Behavioural Driven Development )
+
+Tools :
+
+GIT ----> Version Control Distributed System
+
+	  SCM Tool ----> Source Code Management Tool
+
+
+Jenkins : CICD Tool
+
+	  Continuous Integration Continuous Deployment
+
+   	  Automation Of Automation
+
+
+JIRA ---> Defect Tracking Tool
+
+
+
+Back-End : 
+
+	  API Testing 
+
+	  API ---> Application Programming Interface
+
+
+Tools :
+
+	Postman        ---> Manual
+
+	Rest-Assured	----> Automation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

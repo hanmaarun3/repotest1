@@ -1,0 +1,62 @@
+Array :
+
+        	Storing A Multiple values in a single variable.
+
+	It is a non-primitive datatype.
+
+Syntax :
+
+DataType variableName [] = new DataType [length];
+
+Eg :		
+int a [] = new int [3];
+
+[3] ----> We Give Length
+
+length : 1 2 3 
+index :   0 1 2
+
+features :
+
+It Supports Similiar Datatype.
+
+It is Index Based.
+
+index Starts From 0 to n-1 
+
+where n = Length
+
+
+Dis Advantages :
+
+It Will Support Similiar DataType.
+
+It Has Fixed Length.
+
+It Has High Memory Wastage ....
+
+But It can be Overcome By Collection.
+
+
+Notes :
+
+If we not initialize the value the default value of the given datatype will be printed.
+
+If we override the index the last value will be printed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

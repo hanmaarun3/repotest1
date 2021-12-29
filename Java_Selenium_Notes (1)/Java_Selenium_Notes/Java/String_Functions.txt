@@ -1,0 +1,60 @@
+String :
+
+Collection Of Group Of Words Or Special Characters Must Enclosed With in The Double Quotes.
+
+It is A Index Based.
+
+it is a non-primitive datatype also. 
+
+
+String Functions Or Manipulation :
+
+String s = "Welcome To Java";
+
+s.length()
+
+s.equals()
+
+s.equalsIgnoreCase()
+
+s.toUpperCase()
+
+s.toLowerCase()
+
+s.startsWith()
+
+s.endsWith()
+
+s.contains()
+
+s.indexOf()  //----> value
+
+s.lastIndexOf() //----> value
+
+s.charAt() //---> index
+
+s.replace() 
+
+s.subString()
+
+s.isEmpty()
+
+s.split()
+
+s.trim()
+
+s.compareTo()
+
+
+ASCII Values :
+
+American Standard Code For Information Technology
+
+
+A to Z ------> 65 to 90
+
+a to z ------> 97 to 122
+
+
+0 to 9 -----> 48 to 57
+

@@ -1,0 +1,132 @@
+Rest API :
+
+	Representational State Transfer
+		
+	is a software architectural style which uses a subset of HTTP. ...
+
+
+Dependecies : 
+
+rest-assured ----> 4.3.3
+
+json-path -----> 4.3.3
+
+json-schema-validator ---> 4.3.3
+
+xml-path ---> 4.3.3
+
+json.simple ---> 1.1.1 
+
+
+Data Validation 
+
+Url ---> uniform resource locator
+
+Uri ---> uniform resource identifier
+
+For get : 
+
+	RestAssured.baseURI="baseUrl"
+
+	get a request by using RestAssured.given()
+
+	get a response by using refName.get("url")
+
+	Convert Response to String ---> asString()
+
+	Get Status Code From response
+
+	Use Assert And Verify the response and status code
+
+	getBody, getStatusCode, getHeader(""),getStatusLine(),getTime,getSessionId()
+
+------------------------------------------------------------------------------------------------
+JSON Parser : 
+
+JSONObject ----> Map(K,V)
+
+Json into File
+
+Object for FileReader pass the file
+
+Create Object  for JSONParser 
+
+refName.parse(readerRefName) ---> 
+
+		return type ---> object
+
+
+Type Casting the object refname into JSONObject
+
+by using that refName use get Method ---> 
+
+				return type ---> object
+
+object convert into string by using toString()
+
+-----------------------------------------------------------------------------------------------------
+
+{
+
+"Key"  : "Value", 
+
+"Key" : "Value"
+
+}
+
+
+
+JSONArray
+
+Payload into File
+
+File f = new File("path of payload");
+
+Object for FileReader pass the file
+
+Create Object  for JsonParser 
+
+refName.parse(readerRefName) ---> 
+
+		return type ---> object
+
+	
+Type Casting the object refname into JSONObject
+
+by using that refName use get Method ---> return type ---> object
+
+convert into string 
+
+by use jsonobject refname.get("data")
+
+Type Casting the object refname into JSONArray
+
+by using that refName use get Method ---> return type ---> object
+
+Again type casting into JsonObject
+
+Same procedure
+
+---------------------------------------------------------------------------------------------------
+
+given ----> pre-conditions
+
+when ----> submitting request
+
+then ---> validation
+
+
+
+For Post :
+
+	RestAssured.baseURI="baseUrl"
+
+	.given().queryParam().auth().basic().header().body()
+
+
+	.when().post("url")
+
+	.then().assertThat().statusCode()
+	
+
+

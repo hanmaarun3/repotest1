@@ -1,0 +1,155 @@
+
+Java
+
+Selenium
+
+Base Class : Reusable Methods
+
+Utility Files
+
+POM
+
+
+Page Object Model                               Project Object Model                                  Page Object Manager
+
+Collection Of WebElements
+
+Can be Stored in a separate
+
+classes 
+
+
+			            OOPS Concepts Used In Project
+
+
+Encapsulation                        Inheritance                             Polymorphism                                     Abstraction
+
+					Overload                 Override                    partial           fully
+
+
+POJO                                      Base Class                           Frame                        get()                          By                  Alert
+
+					findElement               getTitle()                                         TakesScreenshot                        
+
+					findElements                                                                       Action
+
+					implicit wait                                                                        OutputType
+					 
+					(synchronization)                                                                JavaScriptExecutor
+
+
+
+			        Collection Concepts Used In Selenium
+
+
+List                                                                                          Set                                                                         Map
+
+findElements()				getWindowHandles()                                          setProperty
+
+
+getOptions()
+
+
+
+Alert                                                      PopUp                                              Window Based Popup
+
+
+Non-Inspect                                           Inspect                                                   Tool : Auto IT    
+
+
+Switch                                                     locators
+
+
+
+
+Login Button Function 
+
+wait
+
+is Enabled ------> True 
+
+check that login  btn in frame or not ?
+
+Actions 
+
+JavaScriptExecutor
+
+js.executeScript("arguments[0].click();" , refName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

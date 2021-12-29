@@ -1,0 +1,41 @@
+Project  ----> Pascal
+
+package  ---> com / org
+
+class ---> Pascal
+
+method  --> camel
+
+object ----> camel
+
+variable --->  camel
+
+For project window : 
+window ---> show view ---> project explorer
+
+For Project
+
+File - new - java project
+
+src-> source
+
+For package
+
+R.C on src -> new -> package
+
+for class : 
+
+R.C on package-> new -> class
+
+for suggestions : ctrl + space
+
+for Alignment : ctrl+shift+f
+
+
+
+
+
+
+
+
+

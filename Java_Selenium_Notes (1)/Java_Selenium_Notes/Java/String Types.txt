@@ -1,0 +1,112 @@
+String Types :
+
+Mutable
+	Im Mutable
+
+		Literal
+			Non-Literal
+
+***********************************************************************************************************************
+
+ImMutable :
+
+Syntax  : String refName = " ";
+
+When we do : 
+	    duplicate value ----- > it will share the memory
+
+	    Concordination ---->  it will create the new memory. // s1 = s2+s3 
+
+
+String Constant Pool
+
+***********************************************************************************************************************************************************
+
+Mutable : 
+
+String Buffer And String Builder
+
+Syntax : 
+
+StringBuffer refName = new StringBuffer("ABC");
+
+StringBuffer refName1 = new StringBuffer("ABC");
+
+When We Do
+
+	    duplicate value ----- > it Will create new memory.
+
+ 	    Append ---->   The memory will be shared.  // s1 = s1.append(s2)
+
+String Buffer :
+		It is a mutable.
+
+		And it is synchronized .. 
+
+		One by one processs . it is a thread safe . But it is a slow process.
+
+*****Thread**** :
+		 Threads allows a program to operate more efficiently by doing multiple 
+		 things at the same time. 
+
+		 
+String Builder :
+		It is a mutable.
+
+		And it is ASynchronized .. 
+
+		It is not a thread safe . But it is a fast process.
+
+***********************************************************************************************************************************************************
+						LITERAL STRING (im mutable)
+
+It stored inside the heap memory.
+
+It will share the memory if Same (Duplicate Value ).
+
+
+Syntax :  String s  = " ";
+
+***********************************************************************************************************************************************************
+						Non LITERAL STRING (mutable)
+	
+it stored in Heap Memory.
+
+It create a new memory even if same (Duplicate) Value
+Syntax : String s  = new String (" ");
+
+***********************************************************************************************************************************************************
+
+
+Memory : 
+
+Stack Memory  : Static memory allocation
+
+primitive, objects,methods
+
+Heap Memory  : Dynamic memory allocation
+string ,non-primitive
+
+To Find Out The Memory :
+
+System.identityHashCode(refName);
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

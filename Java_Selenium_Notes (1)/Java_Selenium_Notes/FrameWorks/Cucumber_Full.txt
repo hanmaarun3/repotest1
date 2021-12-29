@@ -1,0 +1,287 @@
+Cucumber BDD :
+--------------------------
+	->This is the advanced framework i.e [BDD Framework (Behavioural Driven Development)]
+	->We can create our own test case based on the application's behaviour
+	     in plain english language (Gherkin).
+
+Cucumber Installation Procedure:
+---------------------------------------------
+
+		1. Install Natural plugin in EclipseMarketplace.
+
+		2. Install new software by using natural link 
+		
+		Link : http://cucumber.github.com/cucumber-eclipse/update-site
+
+		Link: http://rlogiacco.github.com/Natural
+
+		3. Install Cucumber Editor in eclipse marketplace
+		
+--------------------------------------------------------------------------------
+-Add Junit 4 from library.
+
+Dependencies : 
+-------------------------
+
+  	      info.cukes.MavenRepository
+
+	      cucumber -j unit (1.2.5)
+
+	      cucumber java  (1.2.5)
+
+            	     cucumber core  (1.2.5)
+	
+Environment Setup : 
+-------------------------------
+->Create a Maven Project for cucumber
+
+	1. Name it AdactinCucumber
+
+	2. src/main/java---> com.adactin.baseclass  
+				
+			    -> BaseClass
+					
+			    ->POM Class
+
+			    -> page object manager
+
+			    ->Property  File
+
+			     			      		
+
+	3. src/test/java---> create 3 packages.
+			1. com.adactin.feature
+			2. com.adactin.runner
+			3. com.adactin.stepdefinition
+
+
+
+Three Important files In Cucumber :
+----------------------------------------------------
+
+1. Feature File
+
+2. Step Defintion
+
+3. Test Runner 
+
+
+1. Feature File :
+
+Likewise Test Cases must be written in a plain english (Gherkins) Language.
+each and every step procedure.
+
+
+KeyWords : 
+--------------------
+
+	Feature:       Overall Functionality
+	Scenario:      Particular Functionality for each module
+	Given ---->  Pre-Condition	
+	When ----> Action
+	And ----> Addditional Action
+	Then -----> Validation 
+	But ---> negative Purpose / negative validation
+
+	Scenario Outline -> It is followed by 
+Examples keyword-
+
+2. StepDefintion :
+
+	In feature file we have written test cases in plain english language (Gherkin Language), 
+	Snippets -> 
+	
+3. Test Runner :
+
+ @RunWith(Cucumber.class) ---> J-Unit
+
+	@ CucumberOptions(features="path of the feature file",glue ="stepDefinition path ")
+
+
+
+*Cucumber With J-Unit :*
+
+
+*********************************************************************************************
+
+
+Property File : 
+
+configuration.properties -> Configuration Reader-> File Reader Manager
+
+
+**********************************************************************************************
+Cucumber Options : 
+-----------------------------------
+
+Features  : 
+------------------
+->path of feature file
+
+glue : 
+----------
+->path of step definition
+
+monochrome : 
+------------------------ 
+
+->it will remove special characters in console  and it gives in a more readable format
+
+dryRun:  
+----------------	 
+
+-> it will check the Feature file and step definition without actually running
+
+->Default Value=false
+
+strict : 
+--------------- 
+	
+	->it will check feature file and step definition during the actual running
+
+	->true - >  it shows exception
+
+	->false -> it doesnt Show any exception 
+
+tags : 
+------------  
+
+->To run a particular scenario
+
+->More than one tag : tags = ("tagName1, tagName2")
+
+->To neglect a one tag : tags = ("~tagName1")
+
+->To neglect a more tag : tags = {"~tagName1","~tagName2"}
+
+
+plugin : 
+--------------
+
+	For html Report : {"html:Report/Cucumber_Report"}  // html:Folder/name
+
+	For Pretty Report : {"pretty"}   ----> it will print in console
+
+	For json Report : {"json:Report/Cucumber.json"}    //json:Folder/name.json
+
+	For Cucumber Extent Report : 	{"com.cucumber.listener.ExtentCucumberFormatter:Folder/File.html"}
+
+		For Cucumber Extent Report : 
+
+					vimalselvam - > cucumber-extentsreport (3.0.2)
+
+					aventstack-> extentreports ( 3.1.2)
+
+Add compiler plugin & surefire plugin from maven dependency
+
+Add cucumber-runner   1.0.8 dependency 
+
+
+
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+				<configuration>
+					<includes>**/RunnerClass.java</includes>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+
+
+**************************************************************************************************************
+
+HOOKS : 
+
+cucumber.api.java.After
+cucumber.api.java.Before
+
+Before Hooks : 
+After Hooks : 
+
+
+If @Before annotations given as more than one we give a order 
+
+@Before(order=0)
+@Before(order=1)
+
+If @After annotations given as more than one we give a order 
+
+@After(order=1)
+@After(order=0)
+
+************************************************************************************************************
+
+Background :
+--------------------- 
+
+	->Represent a series of steps that are common for all the scenarious in the feature file.
+	
+	->It runs before each and every scenario.
+
+	->It performs like a hooks 
+
+	->One Background for One Feature File.
+
+************************************************************************************************************
+
+
+<plugin>
+
+	<groupId>net.masterthought</groupId>
+	<artifactId>cucumber-reporting</artifactId>
+	<version>5.5.2</version>
+
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+
+							<projectName>zCucumber</projectName>
+
+							<outputDirectory>${project.build.directory}/cucumber-report.html</outputDirectory>
+
+							<cucumberOutput>${project.build.directory}/cucumberreport.json}</cucumberOutput>
+							<skippedFails>true</skippedFails>
+							<enableFlashCharts>true</enableFlashCharts>
+							<buildNumber>5</buildNumber>
+						</configuration>
+
+					</execution>
+
+				</executions>
+
+
+			</plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+

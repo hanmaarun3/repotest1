@@ -1,0 +1,21 @@
+DataTypes
+
+
+int 
+float
+bool
+complex ( 10 + 2j)
+str
+
+
+Synatx For Declaration :
+-----> Dynamically Typed Data
+
+Varibale Name = Variable value
+
+
+
+#Getting A Input From The Run Time
+
+name = input("Enter Your Name : ")
+

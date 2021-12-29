@@ -1,0 +1,67 @@
+Variables :
+
+Variable Declaration :
+
+			DataType variableName = VariableValue;
+
+eg :
+ 	int a = 17;
+
+  	int b = a;
+
+
+Types :
+
+Local Variable :
+	  	
+		Local variable must be inside the method.
+		
+		its lifecycle will be through out the method.
+
+		we must initialize the local variable.
+
+
+Class Variable or  Instance variable :
+
+		class Variable must be outside the method and inside the class .
+		
+		its lifecycle will be through out the class.
+
+		no need to initialize the class variable. 
+		
+		if we not initialize the value the default value of the given datatype which will be printed. 
+
+		if we give local and class variable as a same reference name the priority go to local variable.
+
+
+Static Variable :
+
+		static Variable must be outside the method and inside the class .
+		
+		Once we declare the variable as static and method as static without using the object we 
+		can call the static variable and static method.	
+	
+		its lifecycle will be through out the class.
+
+		if we not initialize the value the default value of the given datatype which will be printed. 
+
+		in class variable we can use static keyword but we cannot give static in local variable.
+
+
+***********************************************************************************************************************************************************
+
+Type Casting :
+ 
+		It converts a one Datatype into another datatype.
+
+widening :
+ 	 
+ 	   It convert a lower datatype into Higher datatype.
+
+narrowing :
+
+	   It convert a Higher datatype into Lower datatype.
+
+
+***********************************************************************************************************************************************************
+

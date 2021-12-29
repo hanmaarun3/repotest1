@@ -1,0 +1,91 @@
+GIT : 
+
+project : E-Commerce Domain 
+
+	Amazon, Flipkart, myntra
+
+Team : 
+
+Methodology : Agile
+
+	Developer -> 6   
+	
+	Tester  ->  2
+
+	Manual tester - 1
+
+	perfomance tester -1
+
+
+Exp : 
+
+5+ -> meeting
+
+4+ - >   Purchase
+
+3+ -> login functionality
+
+2, fresher -> manual test cases
+
+
+Scenario 
+
+PUSH :  Code -> Stored in  GIT 
+
+.git to URL ( local to remote)
+
+Senior View : 
+
+remote to local -> pull
+
+
+
+
+
+
+Testing :  Expected Meets Actual 
+
+Bug/Defect -> JIRA (defect tracking tool)
+
+		   		     Testing 
+
+				Software testing
+
+
+		Functional                                                     Non-Functional
+
+
+		Manual                                                           perfomance - JMeter
+
+		Automation
+
+
+		Backend -> Application  Programming Interface (API)
+
+
+
+* * * * * 
+
+M H D M Day of Week
+
+
+30 11 * * 1-5
+
+
+30 11 * * 6
+
+
+* 18 * * 0
+
+0 , 7 ---> sunday
+
+* 11 * * 5
+
+
+
+
+
+
+
+
+

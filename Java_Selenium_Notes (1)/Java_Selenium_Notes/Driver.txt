@@ -1,0 +1,55 @@
+Scenario Outline:
+
+		"<refName>"
+
+Examples:
+
+	|refName|refName1|
+
+	|value1|Value2|
+
+
+Test Runner : 
+
+
+
+
+.properties
+
+	Configuration Reader  ----> Constructor ( Load File Into Properties)
+
+				    using get Property 
+
+
+		File Reader Manager : 
+				
+					private constructor ----> restrict the object
+										
+					getInstance() ----> return File Reader manager Object (static)
+							
+					getInstanceCR() ----> return CR Object
+		
+
+		      Base Class .getDriver("property")
+
+				
+				Test Runner 
+
+
+					Step Definition
+
+						Page Object Manager
+
+
+							each and every pom page
+
+
+
+5 days
+
+2 days
+
+
+
+
+

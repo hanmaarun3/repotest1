@@ -1,0 +1,19 @@
+POJO Class 
+
+Plain Old Java Object 
+
+We can access private variables using pojo class by generating getters and setters.
+
+Encapsulation Process
+
+Getters and Setters : 
+
+R.C --> source -> generate getters and setters
+
+
+POM :
+
+Page Object Model
+
+We collect all the elements using locators and store it in separate classes.
+ 

@@ -1,0 +1,269 @@
+Selenium Revision:
+-------------------------
+Testing?
+Expected vs Actual
+---------------------------
+Selenium -
+Components 
+IDE
+RC
+WebDriver
+Grid
+-----------------------------------------
+Selenium Drawback:
+--------------------------------
+mobile testing, standone desktop applications.
+
+-------------------------------------------------------------
+Browser Launch:
+-------------------------
+System.SetProperty("webdriver.chrome.driver","pathofchromedriver");
+WebDriver driver = new ChromeDriver();
+
+WebDriver- Interface
+ChromeDriver-Class
+
+WebDriver driver = new WebDriver(); //it is not possible
+
+ChromeDriver driver = new ChromeDriver(); //it will work
+----------------------------------------------------------------------------------
+WebDriver Methods:
+--------------------------------
+driver.get()-
+driver.getTitle()-
+driver.getCurrentUrl()-
+driver.navigate.To()-
+driver.navigate.back()-
+driver.navigate.forward()-
+driver.navigate.refreash()-
+driver.close()-
+driver.quit()-
+driver.findElement
+driver.findElements
+driver.manage().window()-
+driver.switchTo.window()
+driver.switchTo.frame()-
+driver.switchTo.defaultContent()
+parentFrame()-
+--------------------------------------------------------------------------------------------------
+WebElement Methods:
+-------------------------------------
+element.sendKeys()-
+click()
+isEnabled()-
+isSelected()-
+getText()-
+isDisplayed()-
+clear()-
+getAttribute()-
+------------------------------------------------------------------
+Locators:
+----------------
+To locate the element from the DOM
+------------------------------------------------------------
+*id-By.id("")
+*name
+*class
+*cssSelector
+*Xpath- Two Types: // ,/ //tagname[@attributename='attributevalue']
+*LinkText
+*PartialLinkText
+*Tagname By.tagname("a")
+
+-------------------
+findElement-To locate a single webelement- Return Type - WebElement
+findElements-To locate multiple webElements- Return Type- List<WebElement>
+
+-------------------------------------------------------------------------------------------
+DropDown:
+-----------------
+-List of values- we can choose a value
+Types:
+-------------
+Single
+Multiple
+
+------------------------------
+<Select>
+
+Select refname = new Select(webelement);
+
+
+selectByvalue()
+selectByindex()
+selectByVisibleText()-
+
+isMultiple()-to return dropdown is multiple or not
+
+deselectAll()
+deselectByValue()
+deselectByindex()
+deselectByVisibleText()
+
+getOptions()-Return all the options-  return type -List<WebElement>
+getAllSelectedOptions-Return all selected options -List<WebElement>
+getFirstSelectedOption-Return the first selected option- WebElement
+
+----------------------------------
+Frames:
+-----------
+driver.switchTo.frame(parameter);
+
+parameter:
+-----------------
+index
+id or name
+webElement
+
+how to come out of frame to main window
+-----------------------------------------------------------
+driver.switchTo.defaultContent();
+
+
+
+how to come out of frame to main window:
+-----------------------------------------------------------
+
+driver.switchTo.parentFrame()
+
+==========================================================
+Alerts:
+------------
+driver.switchTo.alert()
+
+Types of Alert:
+---------------------
+Simple- accept()
+Confirm-accept() or dismiss()
+Prompt- sendKeys(""), accept() or dismiss();
+
+
+===========================================================
+Actions:
+----------------
+Mouse Based Events:
+----------------------------------
+Actions refname = new Actions(driver);
+refname.method().build().perform();
+
+moveToElement()-mouse hover
+contextClick()
+click()
+doubleClick()
+clickAndHold()-
+release()
+dragAndDrop()-
+
+==========================================
+Robot:
+------------
+Robot refname = new Robot();
+refname.keyPress(KeyEvent.VK_DOWN);
+
+
+
+---------------------------------------------------------------------------
+Window Handling:
+------------------------------
+getWindowHandle()- current focused window id -return type is String
+getWindowHandles() - window id of all the opened windows. -Set<String>
+
+driver.switchTo.window(id).getTitle().equalsIgnoreCase("");
+
+---------------------------------------------------------------------------------------
+Scroll Up and Down:
+----------------------------------
+JavaScriptExecutor refname = (JavaScriptExecutor)driver;
+refname.executeScript("script",argument);
+
+Using Pixels:
+-------------------
+refname.executeScript("window.scrollBy(0,1000)","");
+
+
+
+
+
+Using WebElement:
+---------------------------
+refname.executeScript("arguments[0].scrollIntoView();",webelement);
+
+-------------------------------------------------------------------------------------------------
+Xpath:
+------------
+relative-//- 
+
+1.basic xpath-//tagname[@attributename='attributevalue']
+
+2.using index-(//tagname[@attributename='attributevalue'])[index]
+
+3.using text-//tagname[text()='textvalue']
+
+4.using contains-//tagname[contains(@attribute,'attribute value')]
+
+5.contains With Text -//tagname[contains(text(),'partialTextvalue')]
+
+--------------------------------------------------------------------------------------------------
+
+absolute- /-single Forward slash 
+
+Starts with root tag
+
+----------------------------------
+
+Dynamic Xpath:
+------------------------
+Axes 
+Relationship::
+
+----
+following-
+preceding
+ancestor
+descendant
+following-sibling
+preceding-sibling
+parent
+child
+
+-----------------------------------------------------------------------------
+CSS Selector:
+--------------------
+1.id- tagname#idvalue
+2.class- tagname.classvalue
+3.attribute- tagname[attributename='attributevalue']
+4.startswith-tagname[attributename^='attributevalue']
+5.endswith -tagname[attributename$='attributevalue']
+6.contains-tagname[attributename*='partialattributevalue']
+
+=======================================================
+WebTable:
+-------------------
+//table
+
+All Data-//table/tbody/tr/td
+All Row Data-//table/tbody/tr[index]/td
+All Column Data-//table/tbody/tr/td[index]
+Specific Data-//table/tbody/tr[index]/td[index]
+
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

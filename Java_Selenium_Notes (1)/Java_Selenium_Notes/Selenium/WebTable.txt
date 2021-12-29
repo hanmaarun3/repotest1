@@ -1,0 +1,48 @@
+WebTable : 
+
+	  A Table Present in the webpage is called WebTable .
+
+
+WebTable DOM Structure : 
+
+<table>  
+
+     <thead>
+
+	<tr>
+	      <th>
+	</tr>
+
+     </thead>
+	  
+	 <tbody> 
+
+		<tr> 
+
+		        <td>
+
+		         <td>
+
+
+		</tr>
+
+	   </tbody>
+</table>
+
+
+Methods : 
+
+All Data : //table/tbody/tr/td
+
+Row Data   : //table/tbody/tr[rowIndex]/td
+
+Column Data  : //table/tbody/tr/td[columnIndex]
+
+Particular Data  : //table/tbody/tr[rowIndex]/td[columnIndex]
+
+Header : By.tagName("th")
+
+
+
+
+

@@ -1,0 +1,232 @@
+DataDriven :
+
+	    It is a framework 
+
+	    the operations to be performed is stored in an external file like Excel sheet
+
+
+Apache POI -> 
+
+POI : 
+	Poor Obfuscation Implementation is an Api that collects java libraries 
+	and help us to read, write datas in Excel.
+
+API -> Application Programming Interface
+
+
+Read ----> to read the data from the excel
+
+Write ---> flow of data into the excel
+
+Dependencies and Versions : 
+
+poi - 4.1.2
+
+poi-ooxml - 4.1.2
+
+poi-ooxml-schemas - 4.1.2
+
+
+Workflow : 
+
+	* Excel 
+
+	     * Workbook ( I ) 
+
+			HSSFWorkbook ( Class ) ----> Before MS-Office 2003
+
+			XSSFWorkbook ( Class ) ---> After 2007 
+
+
+		  * Sheet ( I ) 
+
+
+		     * Row ( I ) 
+
+			* Cell ( I )
+
+			   * CellType
+
+			   	* Cell Data 
+
+					String ------> getStringCellValue()
+
+					Numeric   ---> getNumericCellValue()				
+
+		
+Workbook ( Interface ): 
+
+	A workbook represents a Microsoft Excel file. 
+	
+	used for creating and maintaining the spreadsheet. 
+	
+	A workbook contains many sheets.
+
+
+Types : 
+
+	HSSFWorkbook ( Class ) - used to read/write data to Microsoft Excel file in .xls format. 
+
+				 MS-Office versions 97–2003.
+
+				 HSSF -> Horrible Spreadsheet Format
+
+
+	XSSFWorkbook (class)   - used to read-write data to Microsoft Excel in .xls or .xlsx format. 
+
+				 MS-Office versions 2007 or later.
+
+				 XSSF - > XML SpreadSheet Format
+
+
+Workbook w = new XSSFWorkbook();
+
+
+Sheet  (Interface) : 
+
+	A sheet it contains number of rows and columns.
+
+	For 
+	    create Sheet -> createSheet(name)
+	    
+	    get the sheet -> 
+				getSheetAt(index)
+
+				getSheet(name)
+
+Row (Interface) : 
+
+	A row represents a collection of cells, which is used to represent a row in sheet.
+
+	For 
+	    create Row -> createRow(index)
+	    
+	    get the row -> getRow(index)
+				
+	    get Size ->  getPhysicalNumberOfRows()   
+			
+
+Cell (Interface)  :
+
+	A cell is indicated by a row and column combination.  
+
+	Data can be of the type such as string, numeric value, or date.
+
+	For 
+	    create Cell -> createCell(index)
+	    
+	    get the cell -> getCell(index)
+				
+	    get Size ->  getPhysicalNumberOfCells()
+			
+
+	    get type of cell -> getCellType()
+
+
+				String – getStringCellValue() 
+
+					 return type is String
+					
+				Number – getNumericCellValue() 
+					
+					 return type is double
+					 
+
+
+File Input Stream 
+
+		 Flow of data from the source
+
+File Output Stream
+
+		Flow of data into destination
+
+
+Read Particular Data From Excel : 
+
+Create a object for file and pass the parameter as .xlsx location
+
+Create a object for fileinputstream and pass the parameter as file 
+
+Create a object for workbook along with XSSFWorkbook and pass the parameter as fis
+
+by using worbookrefname
+
+	getSheetAt(index) ---> traverse into sheet
+
+	getSheet(name) ---> traverse into sheet
+
+
+by using sheetrefName
+
+	getRow(index) ----> traverse into particular row
+
+by using rowrefName
+
+	getCell(index) ---> traverse into particular cell
+
+Check the cellType by using 
+
+			getCellType() 
+
+			
+			if(refname.equals(CellType.STRING)){
+
+
+
+			}
+
+
+			string ----> getStringCellValue();
+
+			numeric ---> getNumericCellValue(); 
+
+				    double --- >int 
+
+
+---------------------------------------------------------------------------------------------------------
+
+Write Particular Data From Excel : 
+
+Create a object for file and pass the parameter as .xlsx location
+
+Create a object for fileinputstream and pass the parameter as file 
+
+Create a object for workbook along with XSSFWorkbook and pass the parameter as fis
+
+by using worbookrefname
+
+		wb.createSheet("Name").createRow(index).createCell(index).setCellValue(data);
+
+		wb.getSheet("Name").getRow(index).createCell(index).setCellValue(data);				
+
+
+Create a object for fileoutputstream and pass the parameter as file 
+
+by using workbookrefName
+
+		wb.write(fileoutputstream);
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

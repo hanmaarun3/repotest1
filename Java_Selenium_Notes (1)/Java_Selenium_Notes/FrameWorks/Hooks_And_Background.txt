@@ -1,0 +1,60 @@
+Hooks  								           Background
+
+It will run before and after for                                 It will run before all the scenario           
+
+each and every scenario
+
+Pre Condition and Post Condition 				 Pre Condition
+
+Hooks In Step Definition or In Separate Class			 In Feature File
+
+Types : 							 For One Feature File We Give One Background
+
+beforeHooks() ---> @Before					 Background:
+
+afterHooks() ----> @After						Given 
+
+cucumber.api.java
+
+Order : 
+
+@Before(order=)
+
+order : from 0 to +ve
+
+@After(order=)
+
+order : descending order +ve to 0
+
+
+
+-----------------------------
+
+
+Background :
+
+
+	browser launch
+
+	username
+
+	password
+
+
+
+1. Men
+
+2 . Women
+
+3 . Child
+
+
+tags=("@Child")
+
+
+
+
+
+
+
+
